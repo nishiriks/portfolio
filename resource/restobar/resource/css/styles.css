@@ -1,0 +1,244 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html{
+  background-color: #ffffff;
+  color:#555;
+  font-family: "Lato","Verdana";
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+}
+.logo{
+  float: left;
+  height: 200px;
+  width: auto;
+}
+.main-nav{
+  float: right;
+  list-style: none;
+  margin-top: 70px;
+}
+.main-nav li{
+  display: inline-block;
+  margin-left: 40px;
+}
+.main-nav li a:visited,
+.main-nav li a:link{
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 90%;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+.main-nav li a:active,
+.main-nav li a:hover{
+  border-bottom: 2px solid #e67e22;
+  transition: 0.5s;
+}
+.headermain{
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  word-spacing: 4px;
+  margin-bottom: 30px;
+}
+.row{
+  width: 1140px;
+  margin: 0 auto;
+}
+.header-box{
+  height: 100vh;
+  background-image: linear-gradient(rgba(10, 10, 10, 0.7), rgba(15, 15, 15, 0.6)), url(../img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.header-text{
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  border-radius: 30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn:link,
+.btn:visited{
+  border: 1px solid #e67e22;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-left: 20px;
+  padding: 10px 30px;
+  color: #FFF;
+  transition: 0.5s;
+}
+
+.btn-full:link,
+.btn-full:visited{
+  background-color: #e67e22;
+  transition: 0.5s;
+}
+
+.btn-full:hover,
+.btn-full:active{
+  background-color: #d66603;
+  transition: 0.5s;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+  color: #e67e22;
+  transition: 0.5s;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+  background-color: #e67e22;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.section1{
+  height: 110vh;
+  background-image: linear-gradient(rgba(220, 220, 220, 0.7), rgba(220, 220, 220, 0.6)), url(../img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 5%;
+}
+.card{
+  width: 30%;
+  background-color: #FFF;
+  height: 600px;
+  padding: 10px;
+  display: inline-block;
+  margin-right: 25px;
+  box-shadow: 10px 10px 22px 6px rgba(0,0,0,0.75);
+ -webkit-box-shadow: 10px 10px 22px 6px rgba(0,0,0,0.75);
+ -moz-box-shadow: 10px 10px 22px 6px rgba(0,0,0,0.75);
+}
+.card-image{
+  width: 100%;
+}
+.card h3{
+  padding: 20px;
+  text-transform: uppercase;
+  font-size: 80%;
+  text-align: center;
+}
+.card h4{
+  text-align: center;
+  color: #e67e22;
+  padding: 20px;
+  text-transform: uppercase;
+  font-size: 75%;
+  margin-bottom: -30px;
+}
+.card p{
+  padding: 20px;
+  font-size: 70%;
+}
+.btn-card:link,
+.btn-card:visited{
+  margin-left: 35%;
+  text-decoration: none;
+  color: #e67e22;
+  padding: 5px;
+  border: 1px solid #e67e22;
+  border-radius: 30px;
+  font-size: 75%;
+  transition: 0.5s;
+}
+.btn-card:active,
+.btn-card:hover{
+color: #fff;
+background-color: #e67e22;
+transition: 0.5s;
+}
+
+/* team */
+.section2{
+  height: 110vh;
+  background-color: rgb(232, 232, 232);
+}
+
+.ourteam{
+  padding-top: 70px;
+  text-align: center;
+  font-size: 200%;
+  color: #e67e22;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  word-spacing: 4px;
+  margin-bottom: 30px;
+}
+
+.OTCards{
+  width: 100%;
+  padding: 20px;
+  height: 200px;
+}
+
+.OTC-image{
+  height: 100%;
+  float: left;
+  display: inline-block;
+}
+
+.OTCDetails{
+  float: left;
+  margin-left: 40px;
+  display: inline-block;
+  width: 800px;
+}
+
+.OTC-name{
+  color: #e67e22;
+  margin-bottom: 10px;
+  font-size: 120%;
+}
+.OTC-p{
+  font-size: 70%;
+}
+
+.clearfix{
+  clear: both;
+}
+footer{
+  height: 10vh;
+  background-color: #1c1c1c;
+}
+.footer-dv{
+  width: 45%;
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+}
+.ft{
+  padding: 20px;
+  font-size: 50%;
+}
+.ft2{
+  padding: 20px;
+}
+.ft2 i{
+  font-size: 150%;
+  margin-right: 10px;
+  color:  #e67e22;
+}
+.rtbutton{
+  position: fixed;
+  z-index: 99;
+  bottom: 30px;
+  right: 30px;
+  color:  #e67e22;
+}
+.rtbutton a:visited,
+.rtbutton a:link{
+  color:  #e67e22;
+
+}

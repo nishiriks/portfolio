@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+.borders {
+  margin: 50px;
+  padding: 50px;
+
+}
+.activity{
+  text-align: center;
+  text-transform: uppercase;
+}
+.container{
+  text-align: center;
+}
+.container-act {
+  margin-bottom: 5px;
+  width: 20px;
+}
+.activity1 form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  flex-direction: row;
+  justify-content: center;
+}
+.num1{
+  margin-right: 10px;
+}
+.num2{
+  margin-right: 10px;
+}
+
+.container-act {
+  border: 2px solid #808000;
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  padding: 5px;
+}
+.activity1 label {
+  margin-bottom: 10px;
+}
+
+.activity1 input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  width: 20%;
+}
+
+.activity1 input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 5px;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+.echoed{
+  text-align: center;
+
+}
+.activity1 input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.activity2 form {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.activity2 input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.activity2 input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.activity3 form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.activity3 label {
+  margin-bottom: 10px;
+}
+
+.activity3 input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  width: 45%;
+}
+
+.activity3 input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+.activity4 form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.activity4 label {
+  margin-bottom: 10px;
+}
+
+.activity4 input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  width: 45%;
+}
+
+.activity4 input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+
+
+.activity4 ol {
+  margin-top: 10px;
+  padding-left: 0;
+}
+
+.activity4 li {
+  list-style: none;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.calculate {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.activity5 form {
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.activity5 input[type="number"], .activity5 select {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.activity5 input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.activity6 {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.header-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.echo {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+}
+
+/* Style the header title */
+.header-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style the form */
+form {
+  display: flex;
+  justify-content: center;
+}
+
+/* Style the submit button */
+.submit {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Style the output */
+ .activity7 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  background-color: #f2f2f2;
+}
+
+.activity7 span {
+  font-weight: bold;
+}
+
+input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+  margin-top: 10px;
+  max-width: 400px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+input[type="submit"]:focus {
+  outline: none;
+}
+.activity10 input[type="submit"] {
+  border-radius: 5px;
+  width: 10%;
+  margin-top: 0;
+
+}
+.activity10 input[type="file"] {
+  margin-top: 10px;
+}

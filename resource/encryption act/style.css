@@ -1,0 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100vh;
+  /* background-image: url(./img/bg.jpg); */
+ 
+
+background: #275ED1;
+background: linear-gradient(270deg, #275ED1, #116B6A);
+  background-position: center;
+  background-size: cover;
+}
+.card-form{
+  height: 60vh;
+  width: 50%;
+  background: #6464C5;
+  background: conic-gradient(from 315deg, #6464C5, #0C5089);
+  margin-left: 25%;
+  margin-top: 10%;
+  box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+}
+.card-form h2{
+  font-family: 'Josefin Sans';
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 4rem;
+  padding-top: 7%;
+}
+.input-details{
+  text-align: center;
+  margin-top: 7%;
+}
+.input{
+  width: 50%;
+  margin-bottom: 20px;
+  padding: 5px;
+  border-radius: 20px;
+  color:darkcyan;
+}
+.usern{
+    font-family: 'Manrope';
+}
+.submit-btn{
+  width: 20%;
+  background-color: #bfc5d6;
+  margin-left: 95px;
+  letter-spacing: 2px;
+  font-family:'Manrope' ;
+  text-transform: uppercase;
+}
+.submit-btn:hover,
+.submit-btn:active{
+  width: 20%;
+  background-color: #131e82e7;
+  color: white;
+  letter-spacing: 2px;
+  transition: .5s;
+}
