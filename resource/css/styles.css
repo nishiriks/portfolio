@@ -46,16 +46,17 @@ header{
   text-align: left;
 }
 .greetings{
-  font-family: "Tilt Warp", "Verdana";
-  letter-spacing: 5px;
-  font-size: 100px;
+  font-family: "Nunito";
+  letter-spacing: 2px;
+  font-size: 60px;
+  font-weight: 600;
   color: #fff;
 }
 .myname{
   font-family: "Poppins";
   letter-spacing: 4px;
   color: #fff;
-  font-size: 60px;
+  font-size: 50px;
 }
 .socials a {
   display: inline-flex;
@@ -119,6 +120,10 @@ span{
   transform: scale(1.1) translateY(-5px);
   background-color: #9b2226;
   box-shadow: 0 0 20px #9b2226;
+}
+
+.cv-btn{
+  margin-bottom: 40px;
 }
 
 .skills{
