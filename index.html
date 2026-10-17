@@ -26,45 +26,48 @@
 <body>
   <header id="home">
     <!-- navigation -->
-    <nav class="navbar navbar-expand-md navbar-dark">
-      <div class="container">
-        <div class="logo center">
-          <a href="#">
-            <img src="resource/img/logo2.png" class="img logo2" />
-          </a>
-        </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link active navitem" href="index.html">Home</a>
-            <a class="nav-item nav-link navitem" href="#about-me"> About Me </a>
-            <a class="nav-item nav-link navitem" href="#my-skills">Skills</a>
-            <a class="nav-item nav-link navitem" href="#projects">Projects</a>
-            <a class="nav-item nav-link navitem" href="#contact">Contact</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <div class="container">
-      <div class="content jumbutron jumbutron-fluid header-text">
-        <span class="greetings title-word title-word-1">Krizia Jane Lleva</span>   
-        <h2 class="myname">I am a
-          <span class="auto-type"></span>
-        </h2>
-        <h3 class = "details">I build responsive and user-friendly websites using <br> HTML, CSS, JavaScript, Bootstrap and React.</h3>
-      </div>
-      <div class="socials">
-        <a href="https://www.linkedin.com/in/krizia-lleva-8b6016233/"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/nishiriks"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.facebook.com/keyjeyal"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com/keyjey_al/"><i class="fa-brands fa-instagram"></i></a>
-      </div>
-      <a href="files/my-cv.pdf" download class="btn btn-full cv cv-btn">Download CV</a>
+<nav class="navbar navbar-dark">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active navitem" href="#home">Home</a>
+      <a class="nav-item nav-link navitem" href="#about-me">About Me</a>
+      <a class="nav-item nav-link navitem" href="#my-skills">Skills</a>
+      <a class="nav-item nav-link navitem" href="#projects">Projects</a>
+      <a class="nav-item nav-link navitem" href="#contact">Contact</a>
     </div>
+  </nav>
+
+ <div class="container hero-container my-auto">
+  <div class="row align-items-center">
+    
+    <!-- Left Side: Visual Anchor (Picture) -->
+    <div class="col-lg-5 col-12 text-center mb-4">
+      <img src="resource/img/bg.png" alt="Krizia Jane Lleva" class="img-fluid hero-profile-img" />
+    </div>
+
+    <!-- Right Side: Content & Actions -->
+    <div class="col-lg-7 col-12 text-center text-lg-left pl-lg-5">
+      <span class="greetings title-word title-word-1">Krizia</span>  
+      <h2 class="myname">I am a <span class="auto-type"></span></h2>
+      <h3 class="details">
+        I build responsive and user-friendly websites using <br class="d-none d-md-inline"> 
+        HTML, CSS, JavaScript, Bootstrap, and React.
+      </h3>
+      
+      <!-- Social Media Icons -->
+      <div class="socials mt-3 justify-content-center justify-content-lg-start">
+        <a href="https://www.linkedin.com/in/krizia-lleva-8b6016233/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/nishiriks" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.facebook.com/keyjeyal" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/keyjey_al/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+
+      <div class="mt-4 d-flex justify-content-center justify-content-lg-start">
+        <a href="files/my-cv.pdf" download class="btn btn-full cv cv-btn">Download CV</a>
+      </div>
+    </div>
+
+  </div>
+</div>
   </header>
 
   <section class="about" id="about-me">

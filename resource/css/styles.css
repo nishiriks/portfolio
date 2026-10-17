@@ -9,15 +9,18 @@ html{
   text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
 }
-header{
+header {
   min-height: 100vh;
-  background-image:linear-gradient(rgba(20, 20, 20, 0.69),rgba(20, 20, 20, 0.69)), url(../img/bg.jpg);
-  background-position: center;
-  background-size: cover;
+  background: #000000; /* Solid black background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 90px;
+  padding-bottom: 40px;
 }
-.logo2{
+/* .logo2{
   height: 100px;
-}
+} */
 
 .navitem{
   text-transform: uppercase;
@@ -28,18 +31,52 @@ header{
   font-family: "Poppins";
 }
 
-.navitem:hover{
-  border-bottom: 2px solid #B22222;
+/* Floating Pill Navbar */
+.navbar {
+  position: fixed !important;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10000 !important;
+  width: auto !important;
+  max-width: 95vw !important; /* Constrain floating pill width inside screen */
+  padding: 0 !important;
+  background: transparent !important;
 }
 
-.navbar-dark .navbar-nav .active>.nav-link,
-.navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav .nav-link.show,
-.navbar-dark .navbar-nav .show>.nav-link {
-  color: #B22222;
-  font-weight: bold;
+/* Style the floating pill wrapper */
+.navbar-nav {
+  background: rgba(28, 28, 28, 0.9) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 8px 16px !important;
+  border-radius: 30px !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+  
+  /* Enable flex wrapping for small screens */
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important; /* Allows links to flow underneath when space runs out */
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 6px 10px !important;
+  margin: 0 auto !important;
 }
 
+.navitem {
+  color: #fff !important;
+  font-size: 14px;
+  padding: 6px 14px !important;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.navitem:hover {
+  background-color: rgba(178, 34, 34, 0.2); /* Deep crimson hover glow */
+  color: #FF3131 !important;
+  border-bottom: none; /* Replaces older line border */
+}
 .content{
   padding-top: 5%;
   font-size: 100px;
@@ -547,6 +584,32 @@ footer{
   66%   {color: var(--color-3)}
   99%   {color: var(--color-3)}
   100%  {color: var(--color-1)}
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    top: 10px;
+    width: 92%;                       /* Constrain width within mobile viewports */
+    max-width: 480px;
+  }
+
+  .navbar-nav {
+    padding: 6px 12px;
+    gap: 6px;
+    justify-content: space-between;  /* Distribute items evenly */
+    overflow-x: auto;                 /* Allows smooth horizontal touch scrolling if needed */
+    scrollbar-width: none;            /* Hide scrollbar for Firefox */
+  }
+
+  /* Hide scrollbar for Chrome/Safari/Edge */
+  .navbar-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .navitem {
+    font-size: 12px;                  /* Scale font size down for smaller screens */
+    padding: 4px 8px !important;
+  }
 }
 
 @media(max-width: 820px){
