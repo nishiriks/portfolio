@@ -1051,18 +1051,25 @@ span {
   transform: translateY(-2px);
 }
 
-footer {
-  min-height: 10vh;
-  background-color: #1c1c1c;
+/* ==========================================
+  FOOTER
+   ========================================== */
+.site-footer {
+  background-color: #0a0a0a;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 24px 0;
 }
 
-.ft1 {
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  margin-bottom: 0;
-  font-size: 100%;
-  text-transform: uppercase;
+.copyright-text {
+  color: #888888;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.copyright-text strong {
+  color: #dddddd;
 }
 
 .rtbutton {

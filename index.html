@@ -525,15 +525,11 @@
     </div>
   </section>
 
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md">
-          <p class="ft1">
-            ©Krizia Lleva 2023
-          </p>
-        </div>
-      </div>
+  <footer class="site-footer">
+    <div class="container text-center">
+      <p class="copyright-text">
+        © <span id="current-year"></span> <strong>Krizia Lleva</strong>. All rights reserved.
+      </p>
     </div>
   </footer>
 
@@ -551,6 +547,9 @@
     crossorigin="anonymous"></script>
   <script>
     AOS.init();
+  </script>
+  <script>
+    document.getElementById("current-year").textContent = new Date().getFullYear();
   </script>
 </body>
 
