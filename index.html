@@ -415,60 +415,113 @@
     </div>
   </section>
 
-  <section class="contacts" id="contact">
+  <section class="contact" id="contact">
     <div class="container">
-      <h3 class="text-center">Contact me</h3>
-      <hr class="line mb-5">
-      <div class="row">
-        <div class="col-lg-6 col-12">
-          <form id="form" class="">
-            <div class="form-group">
-              <input type="text" class="name" placeholder="NAME" required="">
-            </div>
-            <div class="form-group">
-              <input type="text" class="email" placeholder="EMAIL" required=" ">
-            </div>
-            <div class="form-group">
-              <textarea class="msg" id="text" placeholder="MESSAGE" required=" "></textarea>
-            </div>
-            <div class="form-group">
-              <button class="btn btn-button">SEND MESSAGE</button>
-            </div>
-          </form>
+      <div class="section-header">
+        <h3 class="section-title">Get In Touch</h3>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="row align-items-stretch">
+
+        <!-- Left Column: Interactive Contact Form -->
+        <div class="col-lg-7 col-12 mb-4 mb-lg-0">
+          <div class="contact-card h-100">
+            <h4 class="contact-subtitle">Send Me a Message</h4>
+            <p class="contact-description">
+              Whether you have a project idea, a job opportunity, or just want to connect, feel free to drop a message
+              below!
+            </p>
+
+            <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form mt-4">
+              <div class="form-row">
+                <div class="col-md-6 form-group mb-3">
+                  <input type="text" name="name" class="form-control custom-input" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mb-3">
+                  <input type="email" name="email" class="form-control custom-input" placeholder="Your Email" required>
+                </div>
+              </div>
+
+              <div class="form-group mb-3">
+                <input type="text" name="subject" class="form-control custom-input" placeholder="Subject" required>
+              </div>
+
+              <div class="form-group mb-4">
+                <textarea name="message" rows="5" class="form-control custom-input" placeholder="Your Message..."
+                  required></textarea>
+              </div>
+
+              <button type="submit" class="btn-send-message">
+                <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
         </div>
 
-        <div class="col-lg-6 col-12">
-          <div class="contact-me">
-            <h5 class="pt-1 pb-1">You can also contact me here:</h5>
-            <ul class="contact-me-here">
-              <li>
-                <a href="https://www.facebook.com/keyjeyal">
-                  <i class="fa-brands fa-facebook"></i> Krizia Lleva
+        <!-- Right Column: Direct Contact Info & Socials -->
+        <div class="col-lg-5 col-12">
+          <div class="contact-card h-100 d-flex flex-column justify-content-between">
+            <div>
+              <h4 class="contact-subtitle mb-4">Contact Information</h4>
+
+              <!-- Live Status -->
+              <div class="availability-badge mb-4">
+                <span class="status-dot"></span>
+                <span class="status-text">Available for Freelance &amp; Full-Time Roles</span>
+              </div>
+
+              <div class="contact-info-list">
+                <!-- Email Card -->
+                <a href="mailto:krizia20lleva@gmail.com" class="info-item">
+                  <div class="info-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div>
+                    <strong>Email</strong>
+                    <p>krizia20lleva@gmail.com</p>
+                  </div>
                 </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/krizia-lleva-8b6016233/">
-                  <i class="fa-brands fa-linkedin-in"></i> Krizia Lleva
+
+                <div class="info-item">
+                  <div class="info-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div>
+                    <strong>Location</strong>
+                    <p>Pandi, Bulacan, Philippines</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Media Connections -->
+            <div class="contact-socials-wrapper mt-4">
+              <h5 class="socials-heading mb-3">Connect With Me</h5>
+              <div class="social-links-grid">
+                <a href="https://www.linkedin.com/in/krizia-lleva-8b6016233/" target="_blank" rel="noopener noreferrer"
+                  class="social-link-card">
+                  <i class="fa-brands fa-linkedin-in"></i> LinkedIn
                 </a>
-              </li>
-              <li>
-                <a href="mailto:krizia20lleva@gmail.com">
-                  <i class="fa-regular fa-envelope"></i> Krizia Jane Lleva
+                <a href="https://github.com/nishiriks" target="_blank" rel="noopener noreferrer"
+                  class="social-link-card">
+                  <i class="fa-brands fa-github"></i> GitHub
                 </a>
-              </li>
+                <a href="https://www.facebook.com/keyjeyal" target="_blank" rel="noopener noreferrer"
+                  class="social-link-card">
+                  <i class="fa-brands fa-facebook-f"></i> Facebook
+                </a>
+                <a href="https://www.instagram.com/keyjey_al/" target="_blank" rel="noopener noreferrer"
+                  class="social-link-card">
+                  <i class="fa-brands fa-instagram"></i> Instagram
+                </a>
+              </div>
+            </div>
+
           </div>
-          <div class="head-contact">
-            <h5 class="pt-3">My Certificates: </h5>
-            <li>
-              <a href="https://drive.google.com/drive/folders/1X05Ryneo3IDLOuRJ6is57LoDXE1CQkG3?usp=share_link">
-                <i class="fa-solid fa-certificate"></i> Certificates
-              </a>
-            </li>
-          </div>
-          </ul>
         </div>
+
       </div>
-    </div>
     </div>
   </section>
 
