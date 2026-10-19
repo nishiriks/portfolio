@@ -5,9 +5,17 @@
 }
 
 html {
-  background-color: #fff;
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
   text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000000;
+  color: #dddddd;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
 }
 
 header {
@@ -20,20 +28,34 @@ header {
   padding-bottom: 40px;
 }
 
-/* .logo2{
-  height: 100px;
-} */
-
-.navitem {
-  text-transform: uppercase;
-  font-size: 90%;
-  padding-top: 0px;
-  letter-spacing: 1px;
-  transition: 0.5s;
-  font-family: "Poppins";
+section {
+  padding: 90px 0 80px 0;
+  position: relative;
 }
 
-/* Floating Pill Navbar */
+.section-header {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-title {
+  color: #B22222;
+  font-family: 'Space Grotesk', 'Syne', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.title-line {
+  margin: 0 auto;
+  width: 60px;
+  height: 3px;
+  background-color: #B22222;
+  border-radius: 2px;
+}
+
 .navbar {
   position: fixed !important;
   top: 15px;
@@ -46,7 +68,6 @@ header {
   padding: 0 !important;
   background: transparent !important;
 }
-
 
 .navbar-nav {
   background: rgba(28, 28, 28, 0.9) !important;
@@ -66,11 +87,21 @@ header {
 }
 
 .navitem {
+  font-family: "Poppins";
+  text-transform: uppercase;
   color: #fff !important;
-  font-size: 14px;
+  font-size: 90%;
+  padding-top: 0px;
+  letter-spacing: 1px;
   padding: 6px 14px !important;
   border-radius: 20px;
   transition: all 0.3s ease;
+}
+
+.navitem.active {
+  background-color: rgba(178, 34, 34, 0.3) !important;
+  color: #FF3131 !important;
+  border-bottom: none !important;
 }
 
 .navitem:hover {
@@ -80,11 +111,12 @@ header {
   /* Replaces older line border */
 }
 
+/* 
 .content {
   padding-top: 5%;
   font-size: 100px;
   text-align: left;
-}
+} */
 
 .hero-profile-img {
   filter: drop-shadow(0 0 25px rgba(255, 49, 49, 0.45));
@@ -1084,15 +1116,43 @@ span {
   color: #BC8F8F;
 }
 
-.title-word {
-  animation: color-animation 5s linear infinite;
-}
+/* ==========================================
+   ANIMATED COLOR TEXT FOR NAME
+   ========================================== */
 
+/* Define the color variable stops */
 .title-word-1 {
   --color-1: #ae2012;
   --color-2: #d1491f;
   --color-3: #f48c06;
 }
+
+/* Apply gradient text clipping and animation */
+.title-word {
+  display: inline-block;
+  background-image: linear-gradient(90deg,
+      var(--color-1),
+      var(--color-2),
+      var(--color-3),
+      var(--color-1));
+  background-size: 200% auto;
+  color: transparent !important;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: color-animation 5s linear infinite;
+}
+
+@keyframes color-animation {
+  0% {
+    background-position: 0% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
+}
+
 
 @media (max-width: 768px) {
   .navbar {
@@ -1169,5 +1229,3 @@ span {
     grid-template-columns: 1fr;
   }
 }
-
-/* Mobile Responsiveness */
