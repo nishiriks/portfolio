@@ -120,7 +120,7 @@ export default function Contact() {
 
             {/* Email */}
             <a
-              href="mailto:krizia2olleva@gmail.com"
+              href="mailto:krizia20lleva@gmail.com"
               className="info-item"
             >
               <div className="info-icon">
