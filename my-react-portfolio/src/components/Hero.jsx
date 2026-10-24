@@ -53,7 +53,7 @@ export default function Hero() {
             {/* Social links */}
             <div className="socials d-flex justify-content-center justify-content-lg-start align-items-center">
               <a
-                href="www.linkedin.com/in/krizia-lleva"
+                href="https://www.linkedin.com/in/krizia-lleva"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
