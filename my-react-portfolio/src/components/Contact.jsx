@@ -21,7 +21,7 @@ export default function Contact() {
 
     const { name, email, subject, message } = formData;
 
-    const mailto = `mailto:krizia2olleva@gmail.com?subject=${encodeURIComponent(
+    const mailto = `mailto:krizia20lleva@gmail.com?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(
       `Name: ${name}\nEmail: ${email}\n\n${message}`
