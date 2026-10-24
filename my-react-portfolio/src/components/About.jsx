@@ -7,7 +7,6 @@ export default function About() {
     "JavaScript (ES6+)",
     "Bootstrap 5",
     "HTML5 / CSS3",
-    "Fortinet Cybersecurity",
     "REST APIs",
   ];
 
