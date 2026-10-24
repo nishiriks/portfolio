@@ -152,7 +152,7 @@ export default function Contact() {
 
             <div className="social-links-grid">
               <a
-                href="https://www.linkedin.com/"
+                href="https://www.linkedin.com/in/krizia-lleva"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-link-card"
@@ -162,7 +162,7 @@ export default function Contact() {
               </a>
 
               <a
-                href="https://github.com/"
+                href="https://github.com/nishiriks"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-link-card"
@@ -172,7 +172,7 @@ export default function Contact() {
               </a>
 
               <a
-                href="https://www.facebook.com/"
+                href="https://www.facebook.com/keyjeyal"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-link-card"
@@ -182,7 +182,7 @@ export default function Contact() {
               </a>
 
               <a
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/keyjey_al"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-link-card"
