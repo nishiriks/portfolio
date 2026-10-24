@@ -163,7 +163,7 @@ export default function About() {
                 </div>
 
                 <a
-                  href="/certificates.pdf"
+                  href="https://drive.google.com/drive/folders/1X05Ryneo3IDLOuRJ6is57LoDXE1CQkG3?usp=share_link"
                   className="btn-cert"
                   target="_blank"
                   rel="noopener noreferrer"

@@ -53,7 +53,7 @@ export default function Hero() {
             {/* Social links */}
             <div className="socials d-flex justify-content-center justify-content-lg-start align-items-center">
               <a
-                href="https://www.linkedin.com/in/krizia-lleva-8b6016233/"
+                href="www.linkedin.com/in/krizia-lleva"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -71,7 +71,7 @@ export default function Hero() {
               </a>
 
               <a
-                href="https://www.facebook.com/"
+                href="https://www.facebook.com/keyjeyal"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
@@ -80,7 +80,7 @@ export default function Hero() {
               </a>
 
               <a
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/keyjey_al"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -92,7 +92,7 @@ export default function Hero() {
             {/* CV button */}
             <div className="mt-3">
               <a
-                href="/resource/resume.pdf"
+                href="https://drive.google.com/drive/folders/1DCM9NAypyxP8uFaAgNE1ayuHQtPj-D75?usp=drive_link"
                 download="Krizia_Jane_Lleva_CV.pdf"
                 className="btn btn-full cv-btn"
               >
