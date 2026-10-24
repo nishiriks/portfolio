@@ -8,7 +8,7 @@ const projectList = [
     description:
       "An AI-assisted laboratory resource management system featuring inventory tracking, automated scheduling, and reporting powered by the Gemini API.",
     tags: ["HTML", "CSS", "JavaScript", "Bootstrap 5", "Gemini API"],
-    image: "public/resource/img/molecules.png",
+    image: "/resource/img/molecules.png",
     link: "https://github.com/nishiriks",
     demo: "",
   },
@@ -18,7 +18,7 @@ const projectList = [
     description:
       "A 5-round classic brick-breaker arcade game recreation featuring custom mouse controls, collision physics, and mobile-responsive level designs.",
     tags: ["GDevelop", "Game Design", "UI Logic"],
-    image: "public/resource/img/arkanoid.png",
+    image: "/resource/img/arkanoid.png",
     link: "YOUR_ARKANOID_GITHUB_REPOSITORY_URL",
     demo: "https://gd.games/keyjeyal/arkanoid-game-replica---end-te",
   },
@@ -28,7 +28,7 @@ const projectList = [
     description:
       "A foundational inventory management system developed as a 1st-year final project to track stock, organize record items, and streamline basic asset workflows.",
     tags: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
-    image: "public/resource/img/inventory.png",
+    image: "/resource/img/inventory.png",
     link: "https://github.com/nishiriks",
     demo: "",
   },
