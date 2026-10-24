@@ -1,7 +1,9 @@
-
 import React, { useState } from 'react';
+import { useForm } from '@formspree/react';
 
 export default function Contact() {
+  const [state, handleSubmit] = useForm('mzeezlve');
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -16,33 +18,39 @@ export default function Contact() {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    const { name, email, subject, message } = formData;
-
-    const mailto = `mailto:krizia20lleva@gmail.com?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\n\n${message}`
-    )}`;
-
-    window.location.href = mailto;
-  };
+  if (state.succeeded) {
+    return (
+      <section className="contact section-padding" id="contact">
+        <div className="container">
+          <div className="contact-card contact-form-card">
+            <h3 className="contact-subtitle">
+              Message Sent Successfully!
+            </h3>
+            <p className="contact-description">
+              Thank you for reaching out. I'll get back to you as soon as possible.
+            </p>
+            <button
+              type="button"
+              className="btn-send-message"
+              onClick={() => window.location.reload()}
+            >
+              SEND ANOTHER MESSAGE
+            </button>
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section className="contact section-padding" id="contact">
       <div className="container">
-        {/* Section Heading */}
         <div className="section-header text-center">
           <h2 className="section-title">Get In Touch</h2>
           <div className="title-line"></div>
         </div>
 
-        {/* Two-column Layout */}
         <div className="contact-grid">
-
-          {/* LEFT: Message Form */}
           <div className="contact-card contact-form-card">
             <h3 className="contact-subtitle">
               Send Me a Message
@@ -53,7 +61,14 @@ export default function Contact() {
               or just want to connect, feel free to drop a message below!
             </p>
 
-            <form onSubmit={handleSubmit}>
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                const form = e.currentTarget;
+                const data = new FormData(form);
+                handleSubmit(data);
+              }}
+            >
               <div className="form-row">
                 <input
                   type="text"
@@ -98,13 +113,24 @@ export default function Contact() {
                 required
               />
 
-              <button type="submit" className="btn-send-message">
-                SEND MESSAGE
+              {state.errors && (
+                <p role="alert" className="contact-error">
+                  Sorry, your message could not be sent.
+                  Please check the form and try again.
+                </p>
+              )}
+
+              <button
+                type="submit"
+                className="btn-send-message"
+                disabled={state.submitting}
+              >
+                {state.submitting ? 'SENDING...' : 'SEND MESSAGE'}
                 <i className="fa-solid fa-paper-plane"></i>
               </button>
             </form>
           </div>
-
+          
           {/* RIGHT: Contact Information */}
           <div className="contact-card contact-info-card">
             <h3 className="contact-subtitle">
